@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    StackOfInt S = StackOfInt();
+    StackOfInt S;
     S.push(1);
     S.push(2);
     cout << S.top() << endl;
@@ -12,3 +12,5 @@ int main() {
     cout << S.top() << endl;
     return 0;
 }
+
+// g++ 12_StackImp_1.cpp 12_UseStack.cpp
