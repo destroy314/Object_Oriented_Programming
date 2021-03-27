@@ -15,8 +15,7 @@ int determinant(int d[], int n) {
                 }
             }
         }
-        int nxx = (i % 2 == 0 ? 1 : -1) * d[i] * determinant(p, n - 1);
-        ans += nxx;
+        ans += (i % 2 == 0 ? 1 : -1) * d[i] * determinant(p, n - 1);
     }
     return ans;
 }
